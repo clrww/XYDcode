@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript学习笔记</title>
+
+
+<body>
+<!--<p>案例1写入 HTML 输出</p>-->
+<!--<p>Javascript 能够直接写入 HTML 输出流中：</p>-->
+<!--<script>-->
+    <!--document.write("<h1>This is a heading</h1>");-->
+    <!--document.write("<p>This is a heading</p>");-->
+<!--</script>-->
+<!--<p>-->
+    <!--您只能在 HTML 输出流中使用 <strong>document.write</strong>。-->
+    <!--如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。-->
+<!--</p>-->
+<!--<p>重点：请使用 document.write() 仅仅向文档输出写内容。-->
+    <!--如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖</p>-->
+
+<!--<h1>This is a heading</h1>-->
+<!--<p>This is a heading</p>-->
+<!--<button type="button" onclick="f11()">点击这里</button>-->
+<!--<script>-->
+    <!--function f11() {-->
+        <!--document.write("糟糕！文档消失了");-->
+
+    <!--}-->
+<!--</script>-->
+
+
+
+
+
+
+
+
+
+
+<!--<p>案例2JavaScript：对事件作出反应</p>-->
+<!--<script>-->
+    <!--function f() {-->
+        <!--alert("welcome");-->
+    <!--}-->
+<!--</script>-->
+<!--<button type="button" onclick="f()">点击这里</button>-->
+
+
+<!--<p>案例3JavaScript：改变 HTML 内容</p>-->
+<!--<p id="demo">-->
+    <!--Javascript能能改变HTML元素内容-->
+<!--</p>-->
+<!--<script>-->
+    <!--function f1() {-->
+        <!--x=document.getElementById("demo");//通过id找到元素内容-->
+        <!--x.innerHTML="Hellow Javascript!";//改变内容-->
+        <!--x.style.color="red";-->
+    <!--}-->
+<!--</script>-->
+<!--<button type="button" onclick="f1()">点击这里</button>-->
+
+
+<!--<p>案例4JavaScript：改变 HTML 图像</p>-->
+<!--<script>-->
+    <!--function changeImage() {-->
+        <!--element=document.getElementById('myimage')-->
+        <!--if(element.src.match("bulbon"))-->
+        <!--{-->
+            <!--element.src="/webstrom/testwork/shazhuzhu/img/clr.png";-->
+        <!--}-->
+        <!--else{-->
+            <!--element.src="/webstrom/testwork/shazhuzhu/img/clr2.png";-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+<!--<img  id="myimage" onclick="changeImage()" src="/webstrom/testwork/shazhuzhu/img/clr.png">-->
+<!--<p>点击图片来切换图片</p>-->
+
+<!--<p>案例5JavaScript：改变 HTML 样式</p>-->
+
+<script >
+    function f3() {
+        x=document.getElementById("demo2");
+        x.style.color="red";
+    }
+</script>
+<p id="demo2">想改变这里字体颜色</p>
+<button type="button" onclick="f3()">点击这里</button>
+
+
+
+<!--<p>JavaScript：验证输入</p>-->
+<!--<p>请输入数字。如果输入值不是数字，浏览器会弹出提示框。</p>-->
+<!--<input type="text" id="demo4">-->
+<!--<script>-->
+
+    <!--function f4() {-->
+        <!--var x=document.getElementById("demo4").value;-->
+        <!--if (x = "" || isNaN(x)){-->
+            <!--alert("Not Numeric");-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+<!--<button type="button" onclick="f4() "> 点击这里</button>-->
+
+
+
+
+<!--<script>-->
+    <!--function f5() {-->
+        <!--document.getElementById("demo5").innerHTML="改变后的字体";-->
+        <!--}-->
+<!--</script>-->
+<!--</head>-->
+<!--<p id="demo5">想要改变这里的文字</p>-->
+<!--<button type="button" onclick="f5()">点击这里</button>-->
+
+
+
+<!--<p>案列</p>-->
+<!--<p>假设 y=5，计算 x=y+2，并显示结果</p>-->
+<!--<button type="button" onclick="f6()">点击这里</button>-->
+<!--<p id="demo6"></p>-->
+<!--<script>-->
+    <!--function f6() {-->
+    <!--var y=5;-->
+    <!--var x=y+2;-->
+    <!--var demoP=document.getElementById("demo6");-->
+    <!--demoP.innerHTML="x"+x;-->
+    <!--}-->
+<!--</script>-->
+
+
+</body>
+</html>
+

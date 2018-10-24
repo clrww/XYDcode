@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM节点-添加和删除节点</title>
+</head>
+<body>
+<div id="demo">
+<p id="demo1">这是一个段落</p>
+<p id="demo2">这也是一个段落</p>
+</div>
+<p id="demo3">这也是一个段落aaa</p>
+<script>
+    var para=document.createElement("p");//创建新的 <p> 元素
+    var node=document.createTextNode("这是新的段落");//向 <p> 元素添加文本，您必须首先创建文本节点。这段代码创建了一个文本节点
+    para.appendChild(node);//向 <p> 元素追加这个文本节点
+    var element=document.getElementById("demo");//向一个已有的元素追加这个新元素
+    element.appendChild(para);//向这个已有的元素追加新元素
+    var para=document.createElement("h1");
+    var node=document.createTextNode("不想看到这段文字")
+    para.appendChild(node);
+    var element=document.getElementById("demo3");
+   element.appendChild(para);
+
+   // var parent=document.getElementById("demo");
+   //  var child=document.getElementById("demo2");
+   //  parent.removeChild(child);//删除元素，必须先获得该元素的父元素，从父元素删除子元素；
+    //解决方案：
+    var child=document.getElementById("demo2");//先找到要删除的子元素
+    child.parentNode.removeChild(child);然后使用其 parentNode 属性来找到父元素
+</script>
+</body>
+</html>

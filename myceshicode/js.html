@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习js语法</title>
+</head>
+
+<body>
+<p>点击这个按钮，来调用带参数的函数</p>
+<button type="button" onclick="f(' WW ','LOVE ','CC ','FOREVER.')">点击这里</button>
+<button type="button" onclick="f(' CC ','LOVE ','CC ','FOREVER.')">点击这里</button>
+<script>
+    function f(A,B,C,D)
+    {
+        alert("we can see"+A+B+C+D+".");
+    }
+</script>
+<P>调用的函数会执行一个计算</P>
+<p id="demo"></p>
+<script>
+    function f2(a,b) {
+        return a*b;
+    }
+    document.getElementById("demo").innerHTML=f2(4,5);
+</script>
+
+<button onclick="f3333()">点击这里</button>
+<p id="demo33"></p>
+<script>
+    function f3333()
+    {
+        var x="";
+        var time=new Date().getHours();
+        if (time<10)
+        {
+            x="good morning";
+        }
+        else if (time<20)
+        {
+            x="good afternoon";
+        }
+        else
+        {
+            x="good evening"
+        }
+        document.getElementById("demo33").innerText=x;
+    }
+<script/>
+
+
+
+<button onclick="myFunction()">点击这里</button>
+<p id="demo"></p>
+<script>
+    function myFunction()
+    {
+        var x;
+        var d=new Date().getDay();
+        switch (d)
+        {
+            case 0:
+                x="Today it's Sunday";
+                break;
+            case 1:
+                x="Today it's Monday";
+                break;
+            case 2:
+                x="Today it's Tuesday";
+                break;
+            case 3:
+                x="Today it's Wednesday";
+                break;
+            case 4:
+                x="Today it's Thursday";
+                break;
+            case 5:
+                x="Today it's Friday";
+                break;
+            case 6:
+                x="Today it's Saturday";
+                break;
+        }
+        document.getElementById("demo").innerHTML=x;
+    }
+</script>
+
+
+<script>
+    cars=["BMW","Volvo","Saab","Ford"];
+    for (var i = 0; i < cars.length; i++)
+    {
+        document.write(cars[i]+"<br>");
+    }
+</script>
+</body>
+</html>

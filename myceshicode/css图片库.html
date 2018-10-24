@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS图片库</title>
+    <style>
+        div.img{
+            margin: 3px;
+            border: 1px solid black;
+            height: auto;
+            width: auto;
+            float: left;
+            text-align: center;
+
+        }
+        div.img img{
+            border: 1px solid red;
+            margin: 2px;
+            display: inline;
+            opacity: 0.4;//给图片设定透明度,opacity 属性能够设置的值从 0.0 到 1.0。值越小，越透明。
+            /*filter:alpha(opacity=40);*/
+        }
+        div.img a:hover img{
+            border: 1px solid black;
+            opacity: 1;
+            /*filter:alpha(opacity=100);*/
+        }
+        div.desc{
+            text-align: center;
+            font-weight: normal;
+            width: 150px;
+            font-size: 12px;
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="img">
+    <a target="_blank" href="img/03.jpg">
+        <img src="img/03.jpg" alt="图片找不到" width="160"height="160">
+    </a>
+    <div class="desc">一张关于花的照片</div>
+</div>
+<div class="img">
+    <a target="_blank" href="img/04.jpg">
+        <img src="img/04.jpg" alt="图片找不到" width="160"height="160">
+    </a>
+    <div class="desc">一张关于花的照片</div>
+</div>
+<div class="img">
+    <a target="_blank" href="img/05.jpg">
+        <img src="img/05.jpg" alt="图片找不到" width="160"height="160">
+    </a>
+    <div class="desc">一张关于花的照片</div>
+</div>
+<div class="img">
+    <a target="_blank" href="img/06.jpg">
+        <img src="img/06.jpg" alt="图片找不到" width="160"height="160">
+    </a>
+    <div class="desc">一张关于花的照片</div>
+</div>
+</body>
+</html>

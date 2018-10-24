@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正方形改变大小</title>
+</head>
+<style>
+    #zfx{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        background-color: red;
+        left: 50%;
+    }
+</style>
+<script>
+    function togreen() {
+        var clr=document.getElementById("zfx");
+        clr.style.backgroundColor="green";
+        clr.style.width="400px";
+        clr.style.height="400px";
+        clr.style.borderRadius="50%"
+    }
+    function tored() {
+        var clr=document.getElementById("zfx");
+        clr.style.background="red";
+        clr.style.width="200px";
+        clr.style.height="200px";
+    }
+</script>
+<body>
+<div id="zfx" onmousemove="togreen()" onmouseout="tored()">
+
+</div>
+</script>
+</body>
+</html>
